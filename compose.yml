@@ -1,0 +1,10 @@
+version: '3'
+services:
+  reactjs+vite_service:
+    container_name: reactjs+vite_container
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "8087:80" 
